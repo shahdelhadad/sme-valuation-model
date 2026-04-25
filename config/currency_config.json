@@ -1,0 +1,7 @@
+{
+  "base_currency": "SAR",
+  "secondary_currency": "USD",
+  "sar_to_usd": 0.2665,
+  "usd_to_sar": 3.75,
+  "last_updated": "2026-04-04"
+}

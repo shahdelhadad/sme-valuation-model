@@ -1,0 +1,139 @@
+{
+  "annual_revenue_sar": {
+    "type": "float",
+    "minimum": 100000,
+    "required": true
+  },
+  "annual_expenses_sar": {
+    "type": "float",
+    "minimum": 0,
+    "note": "must not exceed annual_revenue_sar",
+    "required": true
+  },
+  "annual_profit_sar": {
+    "type": "float",
+    "note": "can be negative",
+    "required": true
+  },
+  "profit_margin": {
+    "type": "float",
+    "minimum": -0.5,
+    "maximum": 0.6,
+    "required": true
+  },
+  "number_of_employees": {
+    "type": "int",
+    "minimum": 1,
+    "required": true
+  },
+  "years_in_operation": {
+    "type": "float",
+    "minimum": 0,
+    "required": true
+  },
+  "monthly_customers": {
+    "type": "int",
+    "minimum": 10,
+    "required": true
+  },
+  "revenue_growth_rate": {
+    "type": "float",
+    "minimum": -0.5,
+    "maximum": 1.0,
+    "required": true
+  },
+  "customer_growth_rate": {
+    "type": "float",
+    "minimum": -0.5,
+    "maximum": 1.0,
+    "required": false,
+    "default": 0.0
+  },
+  "market_demand_score": {
+    "type": "int",
+    "minimum": 1,
+    "maximum": 10,
+    "required": false,
+    "note": "auto-computed from industry + city + country"
+  },
+  "competition_level": {
+    "type": "int",
+    "minimum": 1,
+    "maximum": 10,
+    "required": true
+  },
+  "owner_dependency_score": {
+    "type": "int",
+    "minimum": 1,
+    "maximum": 10,
+    "required": true
+  },
+  "scalability_score": {
+    "type": "int",
+    "minimum": 1,
+    "maximum": 10,
+    "required": true
+  },
+  "location_score": {
+    "type": "int",
+    "minimum": 1,
+    "maximum": 10,
+    "required": false,
+    "default": 5
+  },
+  "revenue_stability_score": {
+    "type": "int",
+    "minimum": 1,
+    "maximum": 10,
+    "required": false,
+    "default": 6
+  },
+  "industry": {
+    "type": "string",
+    "allowed_values": [
+      "Technology",
+      "Healthcare",
+      "Retail",
+      "Manufacturing",
+      "Education",
+      "Hospitality",
+      "Construction",
+      "Logistics",
+      "Finance",
+      "Food & Beverage",
+      "Real Estate",
+      "Professional Services"
+    ],
+    "required": true
+  },
+  "city": {
+    "type": "string",
+    "allowed_values": [
+      "Riyadh",
+      "Jeddah",
+      "Dammam",
+      "Mecca",
+      "Medina",
+      "Khobar",
+      "Tabuk",
+      "Abha",
+      "Hail",
+      "Najran"
+    ],
+    "note": "must match country",
+    "required": true
+  },
+  "country": {
+    "type": "string",
+    "allowed_values": [
+      "Saudi Arabia",
+      "United Arab Emirates",
+      "Qatar",
+      "Kuwait",
+      "Bahrain",
+      "Oman"
+    ],
+    "required": true,
+    "default": "Saudi Arabia"
+  }
+}

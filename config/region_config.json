@@ -1,0 +1,21 @@
+{
+  "primary_region": "Saudi Arabia",
+  "future_regions": [
+    "United Arab Emirates",
+    "Qatar",
+    "Kuwait",
+    "Bahrain",
+    "Oman"
+  ],
+  "supported_cities": {
+    "Saudi Arabia": [
+      "Riyadh", "Jeddah", "Dammam", "Mecca", "Medina",
+      "Khobar", "Tabuk", "Abha", "Hail", "Najran"
+    ],
+    "United Arab Emirates": [],
+    "Qatar": [],
+    "Kuwait": [],
+    "Bahrain": [],
+    "Oman": []
+  }
+}

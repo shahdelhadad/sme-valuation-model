@@ -1,0 +1,47 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+*.egg-info/
+dist/
+build/
+*.egg
+
+# Virtual Environment
+venv/
+env/
+.venv/
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Model binaries (large files)
+models/*.pkl
+models/*.onnx
+models/*.zip
+onnx/
+onnx.zip
+
+# Data — keep only the main dataset
+data/missing_feature_logs.csv
+data/sme_valuation_dataset.csv
+data/sme_valuation_ksa_dataset.csv
+data/sme_valuation_noisy.csv
+
+# IDE / Editor
+.vscode/
+.idea/
+*.code-workspace
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# History
+.history/
+
+# Logs
+*.log

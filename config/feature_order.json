@@ -1,0 +1,74 @@
+{
+  "categorical_features": [
+    "industry",
+    "city",
+    "country"
+  ],
+  "numerical_features": [
+    "years_in_operation",
+    "number_of_employees",
+    "annual_revenue_sar",
+    "annual_expenses_sar",
+    "annual_profit_sar",
+    "profit_margin",
+    "revenue_growth_rate",
+    "customer_growth_rate",
+    "monthly_customers",
+    "market_demand_score",
+    "competition_level",
+    "owner_dependency_score",
+    "scalability_score",
+    "location_score",
+    "revenue_stability_score"
+  ],
+  "all_features_ordered": [
+    "industry",
+    "city",
+    "country",
+    "years_in_operation",
+    "number_of_employees",
+    "annual_revenue_sar",
+    "annual_expenses_sar",
+    "annual_profit_sar",
+    "profit_margin",
+    "revenue_growth_rate",
+    "customer_growth_rate",
+    "monthly_customers",
+    "market_demand_score",
+    "competition_level",
+    "owner_dependency_score",
+    "scalability_score",
+    "location_score",
+    "revenue_stability_score"
+  ],
+  "required_features": [
+    "years_in_operation",
+    "number_of_employees",
+    "annual_revenue_sar",
+    "annual_expenses_sar",
+    "annual_profit_sar",
+    "profit_margin",
+    "revenue_growth_rate",
+    "monthly_customers",
+    "competition_level",
+    "owner_dependency_score",
+    "scalability_score",
+    "industry",
+    "city",
+    "country"
+  ],
+  "optional_features": [
+    "location_score",
+    "customer_growth_rate",
+    "revenue_stability_score"
+  ],
+  "auto_computed_features": [
+    "market_demand_score"
+  ],
+  "optional_defaults": {
+    "location_score": 5,
+    "customer_growth_rate": 0.0,
+    "revenue_stability_score": 6
+  },
+  "target_column": "valuation_sar"
+}
